@@ -1,0 +1,117 @@
+:root{
+    --background: #696969;
+    --navbar: #ffdb0fd1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 20px;
+    background-image: url(./background_register.jpg), linear-gradient(rgba(0, 0, 0, 0.796), rgba(0, 0, 0, 0.796));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply; 
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-register {
+    width: 250px;
+    height: auto;
+    margin-bottom: 0;
+    max-width: 80%;
+}
+
+.form-register {
+    width: 100%;
+    max-width: 400px;
+    background: var(--background);
+    padding: 24px;
+    margin: 0;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 4px solid var(--navbar);
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid var(--navbar);
+}
+.controls:focus {
+    outline: none;
+    border: 1px solid var(--navbar);
+    box-shadow: 0 0 5px var(--navbar);
+}
+
+.form-register a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-register a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: var(--navbar);
+    border: none;
+    padding: 12px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 480px) {
+    .form-register {
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .form-register h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .controls {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .form-register .botons {
+        font-size: 15px;
+    }
+
+    .logo-register {
+    width: 180px;
+    }
+}
